@@ -32,7 +32,7 @@ public class GuiltyGearStrive : SimpleTCPPack
         new("Random Inputs", "RandomInputs") { Category = "Controls", Duration = 10, Price = 15, Description = "Press random buttons on the controller for the duration. Maybe it'll help (spoiler: probably not)." },
 
         // Moves
-        new("Taunt", "Taunt") { Category = "Moves", Price = 6, Description = "You have no control. Surrender." },
+        new("Taunt", "Taunt") { Category = "Moves", Price = 3, Description = "You have no control. Surrender." },
         new("Wild Assault", "WildAssult") { Category = "Moves", Price = 6, Description = "Blitz Attack, is that you?" },
         new("Deflect Shield", "DeflectShield") { Category = "Moves", Price = 6, Description = "Brace for a counter hit." },
         new("236P", "Spe236p") { Category = "Moves", Price = 3, Description = "Girlfriend!" },
@@ -73,5 +73,6 @@ public class GuiltyGearStrive : SimpleTCPPack
         new("214214H", "Spe214214h") { Category = "Moves", Price = 6, Description = "Dragon Install to death is a true combo." },
         new("1080P", "Spe1080p") { Category = "Moves", Price = 6, Description = "Goldlewis works for the government, yet he says \"Down With The System\". Curious." },
         new("Burst", "Burst") { Category = "Moves", Price = 6, Description = "California Burst." },
+        new("RomanCancel", "RomanCancel") { Category = "Moves", Price = 6, Description = "Romantic!" },
     };
 }

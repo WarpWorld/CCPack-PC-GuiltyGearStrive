@@ -1,5 +1,5 @@
-function isReady(flag)
-  return IsActionEnabled(flag)
+function isReady()
+  return IsReady()
 end
 
 function NoPunchButton()
@@ -43,207 +43,171 @@ function RandomInputs()
 end
 
 function Taunt()
-  SetInputOverride("Taunt")
-  return true
+  return SetInputOverride("Taunt")
 end
 
 function WildAssult()
-  SetInputOverride("WildAssult")
-  return true
+  return SetInputOverride("WildAssult")
 end
 
 function DeflectShield()
-  SetInputOverride("DeflectShield")
-  return true
+  return SetInputOverride("DeflectShield")
 end
 
 function Spe236p()
-  SetInputOverride("236p")
-  return true
+  return SetInputOverride("236p")
 end
 
 function Spe236k()
-  SetInputOverride("236k")
-  return true
+  return SetInputOverride("236k")
 end
 
 function Spe236s()
-  SetInputOverride("236s")
-  return true
+  return SetInputOverride("236s")
 end
 
 function Spe236h()
-  SetInputOverride("236h")
-  return true
+  return SetInputOverride("236h")
 end
 
 function Spe214p()
-  SetInputOverride("214p")
-  return true
+  return SetInputOverride("214p")
 end
 
 function Spe214k()
-  SetInputOverride("214k")
-  return true
+  return SetInputOverride("214k")
 end
 
 function Spe214s()
-  SetInputOverride("214s")
-  return true
+  return SetInputOverride("214s")
 end
 
 function Spe214h()
-  SetInputOverride("214h")
-  return true
+  return SetInputOverride("214h")
 end
 
 function Spe623p()
-  SetInputOverride("623p")
-  return true
+  return SetInputOverride("623p")
 end
 
 function Spe623k()
-  SetInputOverride("623k")
-  return true
+  return SetInputOverride("623k")
 end
 
 function Spe623s()
-  SetInputOverride("623s")
-  return true
+  return SetInputOverride("623s")
 end
 
 function Spe623h()
-  SetInputOverride("623h")
-  return true
+  return SetInputOverride("623h")
 end
 
 function Spe41236k()
-  SetInputOverride("41236k")
-  return true
+  return SetInputOverride("41236k")
 end
 
 function Spe41236h()
-  SetInputOverride("41236h")
-  return true
+  return SetInputOverride("41236h")
 end
 
 function Spe63214p()
-  SetInputOverride("63214p")
-  return true
+  return SetInputOverride("63214p")
 end
 
 function Spe63214s()
-  SetInputOverride("63214s")
-  return true
+  return SetInputOverride("63214s")
 end
 
 function Spe46s()
-  SetInputOverride("46s")
-  return true
+  return SetInputOverride("46s")
 end
 
 function Spe46h()
-  SetInputOverride("46h")
-  return true
+  return SetInputOverride("46h")
 end
 
 function Spe28s()
-  SetInputOverride("28s")
-  return true
+  return SetInputOverride("28s")
 end
 
 function Spe28h()
-  SetInputOverride("28h")
-  return true
+  return SetInputOverride("28h")
 end
 
 function Spe2369h()
-  SetInputOverride("2369h")
-  return true
+  return SetInputOverride("2369h")
 end
 
 function Spe22p()
-  SetInputOverride("22p")
-  return true
+  return SetInputOverride("22p")
 end
 
 function Spe22k()
-  SetInputOverride("22k")
-  return true
+  return SetInputOverride("22k")
 end
 
 function Spe22s()
-  SetInputOverride("22s")
-  return true
+  return SetInputOverride("22s")
 end
 
 function Spe22h()
-  SetInputOverride("22h")
-  return true
+  return SetInputOverride("22h")
 end
 
 function BehemothTyphoon()
-  SetInputOverride("BehemothTyphoon")
-  return true
+  return SetInputOverride("BehemothTyphoon")
 end
 
 function Spe632146p()
-  SetInputOverride("632146p")
-  return true
+  return SetInputOverride("632146p")
 end
 
 function Spe632146k()
-  SetInputOverride("632146k")
-  return true
+  return SetInputOverride("632146k")
 end
 
 function Spe632146s()
-  SetInputOverride("632146s")
-  return true
+  return SetInputOverride("632146s")
 end
 
 function Spe632146h()
-  SetInputOverride("632146h")
-  return true
+  return SetInputOverride("632146h")
 end
 
 function Spe236236p()
-  SetInputOverride("236236p")
-  return true
+  return SetInputOverride("236236p")
 end
 
 function Spe236236k()
-  SetInputOverride("236236k")
-  return true
+  return SetInputOverride("236236k")
 end
 
 function Spe236236s()
-  SetInputOverride("236236s")
-  return true
+  return SetInputOverride("236236s")
 end
 
 function Spe236236h()
-  SetInputOverride("236236h")
-  return true
+  return SetInputOverride("236236h")
 end
 
 function Spe236236236h()
-  SetInputOverride("236236236h")
-  return true
+  return SetInputOverride("236236236h")
 end
 
 function Spe214214h()
-  SetInputOverride("214214h")
-  return true
+  return SetInputOverride("214214h")
 end
 
 function Spe1080p()
-  SetInputOverride("1080p")
+  return SetInputOverride("1080p")
 end
 
 function Burst()
-  SetInputOverride("Burst")
-  return true
+  return SetInputOverride("Burst")
+end
+
+function RomanCancel()
+  return SetInputOverride("RomanCancel")
 end
 
 
@@ -294,33 +258,7 @@ LoopAsync(50, function()
     return
   end
 
-  flag = 0x2000
-  
-  if string.starts(code, "No") then
-    flag = 0
-  end
-
-  if code == "DisallowAttacks" then
-    flag = 0
-  end
-
-  if code == "ReverseControls" then
-    flag = 0
-  end
-
-  if code == "RandomInputs" then
-    flag = 0
-  end
-
-  if code == "Taunt" then
-    flag = 0x1000
-  end
-  
-  if code == "Burst" then
-    flag = 0x80000000
-  end
-
-  local status, ready = pcall(isReady, flag)
+  local status, ready = pcall(isReady)
 
   if not status or not ready then
     print("Not ready!")
@@ -373,7 +311,7 @@ LoopAsync(50, function()
         end
 
       else
-        print("Function not found!")
+        print("Function failed!")
         ccRespond(id, 3)
       end
     end
