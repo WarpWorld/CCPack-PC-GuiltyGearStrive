@@ -18,7 +18,7 @@ public class GuiltyGearStrive : SimpleTCPPack<SimpleTCPServerConnector>
 
     public override Game Game { get; } = new("GUILTY GEAR -STRIVE-", "GuiltyGearStrive", "PC", ConnectorType.SimpleTCPServerConnector);
 
-    public override EffectList Effects => new List<Effect>
+    public override EffectList Effects { get; } = new List<Effect>
     {
         // Controls
         new("Disallow Punch Button", "NoPunchButton") { Category = "Controls", Duration = 10, Price = 6, Description = "Have fun getting out of pressure without punches." },
