@@ -1,11 +1,10 @@
-using System;
-using System.Collections.Generic;
+using ConnectorLib.SimpleTCP;
 using CrowdControl.Common;
 using ConnectorType = CrowdControl.Common.ConnectorType;
 
 namespace CrowdControl.Games.Packs.GuiltyGearStrive;
 
-public class GuiltyGearStrive : SimpleTCPPack
+public class GuiltyGearStrive : SimpleTCPPack<SimpleTCPServerConnector>
 {
     public override string Host => "127.0.0.1";
 
