@@ -10,9 +10,9 @@ public class GuiltyGearStrive : SimpleTCPPack<SimpleTCPServerConnector>
 
     public override ushort Port => 33940;
 
-    public override ISimpleTCPPack.MessageFormat MessageFormat => ISimpleTCPPack.MessageFormat.CrowdControlLegacy;
+    public override ISimpleTCPPack.MessageFormatType MessageFormat => ISimpleTCPPack.MessageFormatType.CrowdControlLegacy;
 
-    public override ISimpleTCPPack.QuantityFormat QuantityFormat => ISimpleTCPPack.QuantityFormat.ParameterAndField;
+    public override ISimpleTCPPack.QuantityFormatType QuantityFormat => ISimpleTCPPack.QuantityFormatType.ParameterAndField;
 
     public GuiltyGearStrive(UserRecord player, Func<CrowdControlBlock, bool> responseHandler, Action<object> statusUpdateHandler) : base(player, responseHandler, statusUpdateHandler) { }
 
