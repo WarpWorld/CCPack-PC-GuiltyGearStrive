@@ -11,7 +11,7 @@ public class GuiltyGearStrive : SimpleTCPPack<SimpleTCPServerConnector>
 
     public override ushort Port => 33940;
 
-    [SuppressMessage("PackMetadata", "CC1008:Message Format Property")] //todo - check if this should be changed
+    [SuppressMessage("CrowdControl.PackMetadata", "CC1009:Message Format Property")] //todo - check if this should be changed
     public override ISimpleTCPPack.MessageFormatType MessageFormat => ISimpleTCPPack.MessageFormatType.CrowdControlLegacy;
 
     public override ISimpleTCPPack.QuantityFormatType QuantityFormat => ISimpleTCPPack.QuantityFormatType.ParameterAndField;
